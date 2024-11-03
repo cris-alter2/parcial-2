@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Pokemon</title>
+    <style>
+        @import url("./css/index.css");
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="super_container">
+        <div class="list">
+            <h3>Mars Rover Photos</h3>
+            <label for="fecha">Earth Date: </label>
+            <input type="date" id="fecha" value="2015-07-02" min="2015-07-02" max="2018-03-06">
+            <button class="btn-buscar" onclick="buscar()">Find</button>
+            <table id="table_results">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Rover Name</th>
+                        <th>Camera</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                
+            </table>
+            </div>
+            <div class="paginacion">
+                <button id="prev-page" onclick="cambiarPagina(-1)" disabled>Previous</button>
+                <button id="next-page" onclick="cambiarPagina(1)">Next</button>
+            </div>
+        </div>
+        
+        <div class="detail">
+            <h3>Photo Detail</h3>
+            <div id="select_photo"></div>
+            <div id="Detail_content">
+            <p id="photo_id"></p>
+            <p id="martian_sol"></p>
+            <p id="earth_date"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
